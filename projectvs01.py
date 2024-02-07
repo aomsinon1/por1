@@ -20,6 +20,6 @@ dt=pd.read_excel('data//content/DT01.xlsx')
 NumM=dt[dt['Sex']=='ชาย'].count()
 NumF=dt[dt['Sex']=='หญิง'].count()
 
-dtSex=[NumM, NumF]
+dtSex=[NumM,NumF]
 dtSexd=pd.DataFrame(dtSex)
 st.bar_chart(dtSexd)

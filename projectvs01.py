@@ -19,7 +19,7 @@ st.write(dt.head(1))
 
 #st.write()
 NumM=dt[dt['Sex'] == 'ชาย'].count()
-NumF=dt[dt['sex']=='หญิง'].count()
+NumF=dt[dt['Sex']=='หญิง'].count()
 
 st. subheader('ชาย')
 st. subheader (NumM[1])

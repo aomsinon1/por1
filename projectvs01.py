@@ -13,12 +13,13 @@ with col2:
     st.subheader("จํานวนผู้เสียชีวิต")
     st.write("2, 5600")
 
-dt=pd.read_excel('data/opendata-rtddi-54-66-9month.xlsx')
+dt=pd.read_excel('data//content/DT01.xlsx')
 
-st.write()
-NumM=dt[dt['sex']=='ชาย'].count()
-NumF=dt[dt['sex']=='หญิง'].count()
+#st.write()
 
-dtSex=[NumM,NumF]
-dtSexb=pd.DataFrame(dtSex)
-st.bar_chart(dtSexb)
+NumM=dt[dt['Sex']=='ชาย'].count()
+NumF=dt[dt['Sex']=='หญิง'].count()
+
+dtSex=[NumM, NumF]
+dtSexd=pd.DataFrame(dtSex)
+st.bar_chart(dtSexd)

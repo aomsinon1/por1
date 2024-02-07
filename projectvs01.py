@@ -13,7 +13,7 @@ with col2:
     st.subheader("จํานวนผู้เสียชีวิต")
     st.write("2, 5600")
 
-dt=pd.read_excel('data//content/DT01.xlsx')
+dt=pd.read_excel('data/content/DT01.xlsx')
 
 #st.write()
 
